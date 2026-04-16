@@ -1,0 +1,12 @@
+[2026-02-12 10:08:38,266 script_utils.py:88 INFO] - * mlcr get,ml-model,dlrm,_pytorch,_fp32,_weight_sharded,_r2-downloader
+[2026-02-12 10:08:38,290 script_utils.py:88 INFO] -   * mlcr download-and-extract,_r2-downloader,_url.https://inference.mlcommons-storage.org/metadata/dlrm-v2-model-weights.uri
+[2026-02-12 10:08:38,316 script_utils.py:88 INFO] -     * mlcr download,file,_r2-downloader,_url.https://inference.mlcommons-storage.org/metadata/dlrm-v2-model-weights.uri
+[2026-02-12 10:08:38,330 script_utils.py:88 INFO] -       * mlcr detect,os
+[2026-02-12 10:08:38,346 module.py:4896 INFO] -              ! cd /root/MLC/repos/local/cache/detect-os_4983c27b
+[2026-02-12 10:08:38,346 module.py:4897 INFO] -              ! call /root/MLC/repos/mlcommons@mlperf-automations/script/detect-os/run.sh from tmp-run.sh
+[2026-02-12 10:08:38,369 module.py:5041 INFO] -              ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/detect-os/customize.py
+[2026-02-12 10:08:38,392 module.py:1843 INFO] -         - cache UID: 4983c27bdf7d4e5a
+[2026-02-12 10:08:38,399 customize.py:78 INFO] - 
+[2026-02-12 10:08:38,399 customize.py:79 INFO] - Downloading from https://inference.mlcommons-storage.org/metadata/dlrm-v2-model-weights.uri
+[2026-02-12 10:08:38,400 module.py:4896 INFO] -            ! cd /root/MLC/repos/local/cache/download-file_ml-model-dlrm-t_4f526f4e
+[2026-02-12 10:08:38,400 module.py:4897 INFO] -            ! call /root/MLC/repos/mlcommons@mlperf-automations/script/download-file/run.sh from tmp-run.sh

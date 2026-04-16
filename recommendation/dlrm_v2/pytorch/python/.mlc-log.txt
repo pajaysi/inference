@@ -1,0 +1,52 @@
+[2026-02-12 20:10:35,820 script_utils.py:88 INFO] - * mlcr run-mlperf,inference,_find-performance,_full,_r5.1-dev
+[2026-02-12 20:10:35,827 script_utils.py:88 INFO] -   * mlcr get,mlcommons,inference,src
+[2026-02-12 20:10:35,849 script_utils.py:88 INFO] -     * mlcr detect,os
+[2026-02-12 20:10:35,851 module.py:1018 INFO] -          ! load /root/MLC/repos/local/cache/detect-os_4983c27b/mlc-cached-state.json
+[2026-02-12 20:10:35,857 script_utils.py:88 INFO] -     * mlcr get,python3
+[2026-02-12 20:10:36,275 module.py:3746 INFO] -         * /home/pan/.openclaw/workspace/inference/recommendation/dlrm_v2/pytorch/python/pan/bin/python3
+[2026-02-12 20:10:36,276 module.py:4896 INFO] -                ! cd /root/MLC/repos/local/cache/get-python3_9b3597c6
+[2026-02-12 20:10:36,276 module.py:4897 INFO] -                ! call /root/MLC/repos/mlcommons@mlperf-automations/script/get-python3/run.sh from tmp-run.sh
+[2026-02-12 20:10:36,283 module.py:5041 INFO] -                ! call "detect_version" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-python3/customize.py
+[2026-02-12 20:10:36,290 customize.py:69 INFO] -           Detected version: 3.10.12
+[2026-02-12 20:10:36,291 module.py:4090 INFO] -         # Found artifact in /home/pan/.openclaw/workspace/inference/recommendation/dlrm_v2/pytorch/python/pan/bin/python3
+[2026-02-12 20:10:36,291 module.py:4896 INFO] -            ! cd /root/MLC/repos/local/cache/get-python3_9b3597c6
+[2026-02-12 20:10:36,291 module.py:4897 INFO] -            ! call /root/MLC/repos/mlcommons@mlperf-automations/script/get-python3/run.sh from tmp-run.sh
+[2026-02-12 20:10:36,297 module.py:5041 INFO] -            ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-python3/customize.py
+[2026-02-12 20:10:36,303 customize.py:69 INFO] -           Detected version: 3.10.12
+[2026-02-12 20:10:36,309 module.py:1843 INFO] -       - cache UID: 9b3597c61c294259
+[2026-02-12 20:10:36,323 script_utils.py:88 INFO] -       * mlcr get,git,repo,_branch.master,_repo.https://github.com/mlcommons/inference
+[2026-02-12 20:10:36,336 script_utils.py:88 INFO] -         * mlcr detect,os
+[2026-02-12 20:10:36,336 module.py:1018 INFO] -              ! load /root/MLC/repos/local/cache/detect-os_4983c27b/mlc-cached-state.json
+[2026-02-12 20:10:36,345 module.py:4896 INFO] -              ! cd /root/MLC/repos/local/cache/get-git-repo_inference-src_4754d326
+[2026-02-12 20:10:36,346 module.py:4897 INFO] -              ! call /root/MLC/repos/mlcommons@mlperf-automations/script/get-git-repo/run.sh from tmp-run.sh
+[2026-02-12 20:11:39,031 module.py:5041 INFO] -              ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-git-repo/customize.py
+[2026-02-12 20:11:39,046 module.py:1843 INFO] -           - cache UID: 4754d326878c420d
+[2026-02-12 20:11:39,047 module.py:1910 INFO] - MLC cache path to the Git repo: /root/MLC/repos/local/cache/get-git-repo_inference-src_4754d326/inference
+[2026-02-12 20:11:39,047 module.py:5041 INFO] -          ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-mlperf-inference-src/customize.py
+[2026-02-12 20:11:39,104 module.py:1843 INFO] -           - cache UID: 600d060d686c4b68
+[2026-02-12 20:11:39,108 script_utils.py:88 INFO] -   * mlcr get,mlperf,inference,results,dir,_version.r5.1-dev
+[2026-02-12 20:11:39,129 module.py:5041 INFO] -          ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-mlperf-inference-results-dir/customize.py
+[2026-02-12 20:11:39,142 module.py:1843 INFO] -     - cache UID: 717ef2057f64426e
+[2026-02-12 20:11:39,144 script_utils.py:88 INFO] -   * mlcr install,pip-package,for-mlc-python,_package.tabulate
+[2026-02-12 20:11:45,402 module.py:5041 INFO] -          ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/install-pip-package-for-mlc-python/customize.py
+[2026-02-12 20:11:45,414 module.py:1843 INFO] -     - cache UID: 596a8f4d5e204a6f
+[2026-02-12 20:11:45,415 script_utils.py:88 INFO] -   * mlcr get,mlperf,inference,utils
+[2026-02-12 20:11:45,426 script_utils.py:88 INFO] -     * mlcr get,mlperf,inference,src
+[2026-02-12 20:11:45,427 module.py:1018 INFO] -          ! load /root/MLC/repos/local/cache/get-mlperf-inference-src_600d060d/mlc-cached-state.json
+[2026-02-12 20:11:45,433 module.py:5041 INFO] -          ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-mlperf-inference-utils/customize.py
+[2026-02-12 20:11:45,454 customize.py:273 INFO] - 
+Running loadgen scenario: Offline and mode: performance
+[2026-02-12 20:11:45,542 script_utils.py:88 INFO] - * mlcr get,mlperf,inference,submission,dir,local,_version.r5.1-dev
+[2026-02-12 20:11:45,558 module.py:5041 INFO] -        ! call "postprocess" from /root/MLC/repos/mlcommons@mlperf-automations/script/get-mlperf-inference-submission-dir/customize.py
+[2026-02-12 20:11:45,569 module.py:1843 INFO] -   - cache UID: 113c655aad1d408c
+[2026-02-12 20:11:45,578 script_utils.py:88 INFO] - * mlcr get,preprocessed,dataset,criteo,_mlc
+[2026-02-12 20:11:45,592 script_utils.py:88 INFO] -   * mlcr get,python3
+[2026-02-12 20:11:45,593 module.py:1018 INFO] -        ! load /root/MLC/repos/local/cache/get-python3_9b3597c6/mlc-cached-state.json
+[2026-02-12 20:11:45,600 script_utils.py:88 INFO] -   * mlcr download-and-extract,_r2-downloader,_url.https://inference.mlcommons-storage.org/metadata/dlrm-v2-preprocessed-dataset.uri
+[2026-02-12 20:11:45,618 script_utils.py:88 INFO] -     * mlcr download,file,_r2-downloader,_url.https://inference.mlcommons-storage.org/metadata/dlrm-v2-preprocessed-dataset.uri
+[2026-02-12 20:11:45,635 script_utils.py:88 INFO] -       * mlcr detect,os
+[2026-02-12 20:11:45,636 module.py:1018 INFO] -            ! load /root/MLC/repos/local/cache/detect-os_4983c27b/mlc-cached-state.json
+[2026-02-12 20:11:45,641 customize.py:78 INFO] - 
+[2026-02-12 20:11:45,641 customize.py:79 INFO] - Downloading from https://inference.mlcommons-storage.org/metadata/dlrm-v2-preprocessed-dataset.uri
+[2026-02-12 20:11:45,642 module.py:4896 INFO] -            ! cd /root/MLC/repos/local/cache/download-file_criteo-preproce_d52b06d1
+[2026-02-12 20:11:45,642 module.py:4897 INFO] -            ! call /root/MLC/repos/mlcommons@mlperf-automations/script/download-file/run.sh from tmp-run.sh
